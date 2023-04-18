@@ -1,0 +1,188 @@
+.projectDataForm {
+    position: relative;
+    width: 100%;
+    margin-top: 32px;
+}
+.projectDataForm .formField {
+    padding: 32px 24px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    border-bottom: 1px solid var(--border-color)
+}
+.projectDataForm .formTasks {
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+}
+.projectDataForm .formTasks div {
+    margin-top: 12px;
+}
+.projectDataForm .formTasks table {
+    width: 100%;
+    display: none;
+}
+.projectDataForm .formTasks table.active {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    border: 1px solid #e2e2e2;
+}
+.projectDataForm .formTasks table tr {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-color)
+}
+.projectDataForm .formTasks h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    background: #e2e2e2;
+    padding: 24px 24px;
+    border-radius: 4px 4px 0 0; 
+    cursor: pointer;
+}
+.projectDataForm .formTasks h3 svg {
+    width: 20px;
+    height: 20px;
+    transform: rotate(-90deg);
+    transition: 500ms;
+}
+.projectDataForm .formTasks h3.active svg {
+    transform: rotate(00deg);
+    transition: 500ms;
+}
+.projectDataForm .formTasks button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    background: transparent;
+}
+.projectDataForm .formTasks tr svg {
+    height: 20px;
+    width: 20px;
+    fill: #ff0000;
+}
+.projectDataForm h1 {
+    color: var(--secondary-color);
+}
+.projectDataForm .text {
+    padding-right: 12px;
+}
+.projectDataForm h3 {
+    margin: 0;
+    font-weight: var(--medium-weight);
+    font-size: var(--small-size);
+    color: var(--secondary-color);
+}
+.projectDataForm p {
+    color: var(--terciary-color);
+    font-weight: var(--medium-weight);
+    font-size: var(--ex-small-size);
+    margin: 0;
+}
+.formField textarea,
+.formField select,
+.formField input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #e2e2e2;
+    width: 300px;
+    box-sizing: border-box;
+    padding: 12px;
+    resize: none;
+}
+.formField .money {
+    width: 41px;
+    height: 41px;
+    border-radius: 4px;
+    padding: 10px;
+    padding-top: 12px;
+    background: #e9e9e9;
+    border: 1px solid #e2e2e2;
+}
+.formField .min {
+    display: flex;
+}
+.formField .min input[type="number"] {
+    width: calc(300px - 41px);
+}
+.formField input[type="date"]::-webkit-inner-spin-button,
+.formField input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+.botaoF {
+    position: absolute;
+    right: 0;
+    top: -70px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    background: #7b00ff;
+    padding: 8px 12px;
+    width: 80px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: var(--ex-small-size);
+    font-family: 'Inter', sans-serif
+}
+.botao {
+    float: right;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    background: #7b00ff;
+    padding: 8px 12px;
+    width: 80px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: var(--ex-small-size);
+    font-family: 'Inter', sans-serif
+}
+.formField .radio {
+    display: flex;
+}
+.formField .radio input {
+    width: 32px;
+    
+}
+.formField .selectNone {
+    background: #eee; /*Simular campo inativo - Sugestão @GabrielRodrigues*/
+    pointer-events: none;
+    touch-action: none;
+}
+.error {
+    font-weight: bold;
+    background: #ff00002e;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 4px;
+}   
+.success {
+    font-weight: bold;
+    background: #00ff0050;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 4px;
+}
+.error p {
+    color: #ff0000!important;
+}
+.success p {
+    color: #009f00!important;
+}
+@media (max-width: 425px) {
+    .formField {
+        display: flex!important;
+        flex-direction: column;
+    }
+    .formField .text {
+        margin-bottom: 8px;
+    }
+}

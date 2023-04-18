@@ -1,0 +1,19 @@
+.back {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--main-color);
+    color: var(--main-color);
+    cursor: pointer;
+    z-index: 10000;
+}
+.back svg {
+    height: 24px;
+    width: 24px;
+    margin-right: -4px;
+    margin-top: 2px;
+    cursor: pointer;
+}

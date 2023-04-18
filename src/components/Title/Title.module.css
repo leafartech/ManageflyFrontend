@@ -1,0 +1,29 @@
+.title {
+    position: relative;
+    width: 100%;
+}
+.title h1 {
+    font-weight: 600;
+    font-size: var(--big-size);
+    margin-bottom: 0;
+}
+.title h4 {
+    color: #ababab;
+    font-size: var(--small-size);
+    font-weight: 400;
+    margin-top: 12px;
+}
+@media (max-width: 425px) {
+    .title {
+        margin-bottom: 24px;
+    }
+    .title h1 {
+        font-size: var(--medium-size);
+        margin-bottom: 4px;
+    }
+    .title h4 {
+        font-size: var(--ex-small-size);
+        margin-top: 8px;
+    }
+
+}
