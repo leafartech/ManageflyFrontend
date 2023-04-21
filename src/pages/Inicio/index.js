@@ -62,9 +62,9 @@ const Inicio = () => {
             <section className={ styles.inicio }>
                 <Title2 path="" text="O que gostaria de fazer?" />
                 <div className={ styles.flexRow }>
-                    <Acts path="/projetos/criar" icon="./images/acts/project.png" text="Criar projeto"/>
-                    <Acts path="/tarefas" icon="./images/acts/task.png" text="Visualizar tarefas"/>
-                    <Acts path="/financas" icon="./images/acts/money.png" text="Registrar movimentação"/>
+                    <Acts path="/projetos/criar" icon="./images/Acts/project.png" text="Criar projeto"/>
+                    <Acts path="/tarefas" icon="./images/Acts/task.png" text="Visualizar tarefas"/>
+                    <Acts path="/financas" icon="./images/Acts/money.png" text="Registrar movimentação"/>
                 </div>
             </section>
             <section className={ styles.inicio }>
