@@ -1,0 +1,9 @@
+.header {
+    position: relative;
+    z-index: 100000;
+}
+@media (min-width: 425px) {
+    .menu > div {
+        display: none;
+    }
+}

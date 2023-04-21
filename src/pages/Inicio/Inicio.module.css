@@ -1,0 +1,18 @@
+.inicio .flexRow {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+}
+.inicio .flexGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+@media (max-width: 425px) {
+    .inicio .flexRow,
+    .inicio .flexGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+} 

@@ -1,0 +1,28 @@
+.title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 700px;
+    margin-bottom: 24px;
+}
+.title.left {
+    text-align: left;
+}
+.title h2 {
+    font-size: var(--big-size);
+    font-weight: var(--normal-weight);
+    color: var(--secondary-color);
+    margin: 0;
+}
+.title h5 {
+    font-size: var(--small-size);
+    font-weight: var(--link-weight);
+    color: var(--main-color);
+    margin: 0;
+}
+.title p {
+    margin-top: 0;
+    font-weight: var(--normal-weight);
+    font-size: var(--small-size);
+    color: var(--secondary-color-opacity);
+}

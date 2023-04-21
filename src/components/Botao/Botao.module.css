@@ -1,0 +1,25 @@
+.botaoNormal,
+.botao {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    background: #7b00ff;
+    padding: 12px;
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 16px;
+    text-decoration: none;
+    font-size: var(--ex-small-size);
+}
+@media (min-width: 862px) {
+    .botao {
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        max-width: 120px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+}

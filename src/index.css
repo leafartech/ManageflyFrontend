@@ -1,0 +1,56 @@
+:root {
+  --main-color: #9300FF;
+  --secondary-color: #17181A;
+  --secondary-color-opacity: #17181a99;
+  --terciary-color: #ababab;
+  --border-color: #E1E2E6;
+  --shadow: 0 4px 4px rgba(226, 226, 226, .5);
+  --big-size: 32px;
+  --medium-size: 24px;
+  --normal-size: 20px;
+  --small-size: 16px;
+  --ex-small-size: 14px;
+  --exx-small-size: 12px;
+  --exxx-small-size: 10px;
+  --radius: 8px;
+  --link-weight: 600;
+  --normal-weight: 400;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.projectNav .actived {
+  border-bottom: 1px solid var(--main-color);
+  color: #9300FF;
+  font-weight: 600;
+}
+#root > div > div > div > nav > a.active > span.actived::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #9300FF;
+  border-radius: 12px
+}
+.menu a.active {
+  color: #9300FF;
+  fill: #9300FF;
+}
+section {
+  width: 100%;
+  justify-content: flex-start;
+}
+@media (min-width: 862px) {
+  .menu a.active {
+    font-weight: 600;
+    border-radius: 4px;
+    background: #9500ff10;
+  }
+}

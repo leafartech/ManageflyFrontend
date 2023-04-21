@@ -1,0 +1,315 @@
+.modal {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 10000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal .bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+}
+.modal .forms {
+    position: relative;
+    width: 400px;
+    border-radius: 12px;
+    padding: 24px;
+    border: 1px solid var(--border-color);
+    background: #fff;
+}
+.modal .hidInputs {
+    height: 450px;
+}
+.modal .hidInputs .error,
+.modal .hidInputs button,
+.modal .hidInputs svg,
+.modal .hidInputs .formControl {
+    display: none!important;
+}
+.modal .forms h2 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: var(--link-weight);
+    color: var(--secondary-color);
+    fill: var(--main-color);
+    margin-bottom: 48px;
+}
+.modal .forms h2 img {
+    height: 24px;
+    width: 24px;
+}
+.modal .forms .formControl {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 24px;
+}
+.modal .forms > div > label {
+    position: relative;
+    font-size: 1rem;
+    font-weight: var(--link-weight);
+}
+.modal .forms input[type="date"],
+.modal .forms input[type="number"],
+.modal .forms input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 8px;
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    box-shadow: var(--shadow);
+}
+.modal input[type="date"] {
+    color: #757575;
+}
+.modal input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}  
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+}
+.modal button {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: var(--main-color);
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: 'inter', sans-serif;
+}
+.modal .close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+}
+.modal .close svg {
+    height: 18px;
+    width: 18px;
+    fill: #ff0000;
+}
+.modal .radio {
+    display: flex;
+    gap: 24px;
+}
+.modal .radio div {
+    display: flex;
+}
+.modal .valor {
+    display: flex;
+}
+.modal .valor h6 {
+    height: 40px;
+    width: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    /* border: 1px solid var(--border-color); */
+    color: var(--secondary-color);
+    font-weight: var(--normal-weight);
+    font-size: var(--ex-small-size);
+    box-shadow: var(--shadow);
+    background: #F7F8FA;
+}
+.modal button {
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botao {
+  position: absolute;
+  top: 24px;
+  right: 0;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #fff;
+  background: #7b00ff;
+  padding: 12px;
+  width: 190px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: var(--ex-small-size);
+  font-family: 'Inter', sans-serif;
+}
+.error {
+    /* position: absolute;
+    bottom: -20px;
+    left: 0px; */
+    margin-top: 12px;
+    background: tomato;
+    padding: 10px;
+    width: 100%;
+    font-size: var(--ex-small-size);
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+}
+.spinner {
+    font-size: 28px;
+    position: relative;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    width: 10px;
+    height: 10px;
+}
+  .spinner.center {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  
+  .spinner .spinnerBlade {
+    position: absolute;
+    left: 0.4629em;
+    bottom: 0;
+    width: 0.074em;
+    height: 0.2777em;
+    border-radius: 0.0555em;
+    background-color: transparent;
+    -webkit-transform-origin: center -0.2222em;
+    -ms-transform-origin: center -0.2222em;
+    transform-origin: center -0.2222em;
+    animation: spinner-fade9234 1s infinite linear;
+  }
+  
+  .spinner .spinnerBlade:nth-child(1) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  
+  .spinner .spinnerBlade:nth-child(2) {
+    -webkit-animation-delay: 0.083s;
+    animation-delay: 0.083s;
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+  
+  .spinner .spinnerBlade:nth-child(3) {
+    -webkit-animation-delay: 0.166s;
+    animation-delay: 0.166s;
+    -webkit-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    transform: rotate(60deg);
+  }
+  
+  .spinner .spinnerBlade:nth-child(4) {
+    -webkit-animation-delay: 0.249s;
+    animation-delay: 0.249s;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  
+  .spinner .spinnerBlade:nth-child(5) {
+    -webkit-animation-delay: 0.332s;
+    animation-delay: 0.332s;
+    -webkit-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    transform: rotate(120deg);
+  }
+  
+  .spinner .spinnerBlade:nth-child(6) {
+    -webkit-animation-delay: 0.415s;
+    animation-delay: 0.415s;
+    -webkit-transform: rotate(150deg);
+    -ms-transform: rotate(150deg);
+    transform: rotate(150deg);
+  }
+  
+  .spinner .spinnerBlade:nth-child(7) {
+    -webkit-animation-delay: 0.498s;
+    animation-delay: 0.498s;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  
+  .spinner .spinnerBlade:nth-child(8) {
+    -webkit-animation-delay: 0.581s;
+    animation-delay: 0.581s;
+    -webkit-transform: rotate(210deg);
+    -ms-transform: rotate(210deg);
+    transform: rotate(210deg);
+  }
+  
+  .spinner .spinnerBlade:nth-child(9) {
+    -webkit-animation-delay: 0.664s;
+    animation-delay: 0.664s;
+    -webkit-transform: rotate(240deg);
+    -ms-transform: rotate(240deg);
+    transform: rotate(240deg);
+  }
+  
+  .spinner .spinnerBlade:nth-child(10) {
+    -webkit-animation-delay: 0.747s;
+    animation-delay: 0.747s;
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+  
+  .spinner .spinnerBlade:nth-child(11) {
+    -webkit-animation-delay: 0.83s;
+    animation-delay: 0.83s;
+    -webkit-transform: rotate(300deg);
+    -ms-transform: rotate(300deg);
+    transform: rotate(300deg);
+  }
+  
+  .spinner .spinnerBlade:nth-child(12) {
+    -webkit-animation-delay: 0.913s;
+    animation-delay: 0.913s;
+    -webkit-transform: rotate(330deg);
+    -ms-transform: rotate(330deg);
+    transform: rotate(330deg);
+  }
+  
+  @keyframes spinner-fade9234 {
+    0% {
+      background-color: #69717d;
+    }
+  
+    100% {
+      background-color: transparent;
+    }
+  }
+
+@media (max-width: 425px) {
+  .modal .forms {
+    width: 95%;
+    box-sizing: border-box;
+  }
+  .modal .forms h2 {
+    gap: 4px;
+    font-size: var(--normal-size);
+  }
+  .botao {
+    left: 0;
+    top: 64px;
+  }
+}
